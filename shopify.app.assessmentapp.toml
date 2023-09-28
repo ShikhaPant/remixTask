@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "assessmentApp"
+client_id = "1f78bbb66b2fd0677c42477a14094706"
+application_url = "https://fe-zones-dog-marie.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,write_products,read_script_tags,write_script_tags,read_themes,write_themes,read_orders,write_orders"
+
+[auth]
+redirect_urls = [
+  "https://fe-zones-dog-marie.trycloudflare.com/auth/callback",
+  "https://fe-zones-dog-marie.trycloudflare.com/auth/shopify/callback",
+  "https://fe-zones-dog-marie.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "nahidp-store.myshopify.com"
